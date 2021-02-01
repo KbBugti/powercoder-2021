@@ -1,17 +1,19 @@
 
 // jQuery
 // All the headers of h1 will be changed by these texts
-$("p").text("jQuery is the greatest!");
+$("h1").text("jQuery is the greatest!");
 
 // when you click on the button it will pop up
 $("button").click(function () {
     alert("The paragraph was clicked!");
 });
 
+// How to div class name in jQuery
+$(".note").text("jquery is very easy to learn!")
 
-
-
-
+var headingText = $("#heading").text();
+console.log(headingText);
+$("#heading").text("jQuery is the one best framwork of JavaScript!" + headingText + "!");
 
 
 // DOM 
