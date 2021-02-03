@@ -1,21 +1,3 @@
-
-// jQuery
-// All the headers of h1 will be changed by these texts
-$("h1").text("jQuery is the greatest!");
-
-// when you click on the button it will pop up
-$("button").click(function () {
-    alert("The paragraph was clicked!");
-});
-
-// How to div class name in jQuery
-$(".note").text("jquery is very easy to learn!")
-
-var headingText = $("#heading").text();
-console.log(headingText);
-$("#heading").text("jQuery is the one best framwork of JavaScript!" + headingText + "!");
-
-
 // DOM 
 // window.onload = function(){
 //     const heading = document.createElement("h2");
@@ -32,7 +14,6 @@ $("#heading").text("jQuery is the one best framwork of JavaScript!" + headingTex
 // }
 
 
-
 //value from 0 to 1
 // function getColor(value){
 //     var hue=((1-value)*120).toString(2);
@@ -46,3 +27,37 @@ $("#heading").text("jQuery is the one best framwork of JavaScript!" + headingTex
 //     d.style.backgroundColor=getColor(value);
 //     document.body.appendChild(d);
 // }
+
+
+// jQuery
+
+// $("h1"); // selects all the h1s
+// $("#heading"); // selects the element with id of "heading"
+// $(".warning"); // selects all the elements with class name of "warning"
+
+// All the headers of h1 will be changed by these texts
+$("h1").text("jQuery is the greatest!");
+
+// How to div class name in jQuery
+$(".note").text("jquery is very easy to learn!")
+
+var headingText = $("#heading").text();
+console.log(headingText);
+$("#heading").text("jQuery is the one best framwork of JavaScript!" + headingText + "!");
+
+// Math discoveries
+var math = $("#math-heading");
+console.log(math);
+math.text(math.text() + " " + "amazing!" + " "  + math);
+
+// Science discoveries
+var science = $("#science-heading");
+science.text(science.text() + " " + science + " " + "jQuery is amazaing!");
+
+// How to add a class in div element with jQuery
+$(div.surprise).addClass("omg").show("slow");
+
+// when you click on the button it will pop up
+$("button").click(function () {
+    alert("The paragraph was clicked!");
+});
