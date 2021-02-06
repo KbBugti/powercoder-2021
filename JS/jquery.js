@@ -1,3 +1,7 @@
+
+
+
+
 // DOM 
 // window.onload = function(){
 //     const heading = document.createElement("h2");
