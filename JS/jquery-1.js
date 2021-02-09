@@ -1,5 +1,5 @@
 // Modifying elements with jQuery
-$("h2").text("CROCODILE ATTACKED ON CAT!");
+$("h2").text("CROCODILE ATTACKED!");
 $("p").html(" The crocodiles are coming - <strong>Oh noess</strong>!");
 
 // Add CSS roules
@@ -23,3 +23,17 @@ $("div").append(newP);
 
 
 // jQuery Collections vs. DOM Nodes
+
+headingFromD = document.getElementById("cute");
+
+// DOM NODE
+
+headingFromD.innerHTML = ("Setting .innerHTML");
+var headingFromJ = $("#cute");  // jQuery Collection
+headingFromJ.html("Using .html()");
+
+var $heading = $("#cute");
+$heading.html("Using jQuery again!");
+var headingD = $heading[0];
+
+var $headingJ = $(headingD);
