@@ -2,6 +2,21 @@
 $("h2").text("CROCODILE ATTACKED!");
 $("p").html(" The crocodiles are coming - <strong>Oh noess</strong>!");
 
+// for loop
+var $paragraphs = $('p');
+for (var i = 0; i < $paragraphs.length; i++) {
+    var element = $paragraphs[i]; // DOM node
+    var $paragraph = $(element);
+    $paragraph.html( $paragraph.html() + "..huzzah!");
+}
+
+// each()
+$paragraphs.each(function(index, element) {
+    var $paragraph = $(this);
+    console.log(element === this);
+    $paragraph.html( $paragraph.html() + "..wowee!");
+});
+
 // Add CSS roules
 $("p").css("color", "green");
 
