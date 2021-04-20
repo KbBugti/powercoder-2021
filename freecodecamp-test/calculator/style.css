@@ -1,0 +1,46 @@
+#table {
+    position: absolute;
+    right: 45%;
+    top: 10%;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0px 0px 10px 3px #D1B817;
+}
+
+table input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 17px;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+tr {
+    width: 400px;
+    height: 10px;
+}
+
+th {
+    padding-left: 4px !important;
+    align-items: center;
+    background-color: #D1B817;
+}
+
+.yallow-buttons {
+    background-color: orange;
+    font-size: 17px;
+}
+
+#green-screen {
+    margin-top: 10px;
+    margin-left: 1px;
+    font-size: 30px;
+    background-color: #ffffff;
+    width: 285px;
+    height: 60px;
+    color: #000000;
+    border-radius: 10px;
+}

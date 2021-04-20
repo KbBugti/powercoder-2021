@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <form name="Calc" action="">
+        <table id="table">
+            <tr>
+                <th>
+                    <input id="green-screen" type="text" name="Input" size="12" />
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <table class="table-content" summary="">
+                        <tr>
+                            <th>
+                                <table summary="">
+                                    <tr>
+                                        <th>
+                                            <input type="button" name="one" value="1"
+                                                onclick="Calc.Input.value += '1'" />
+                                            <input type="button" name="two" value="2"
+                                                onclick="Calc.Input.value += '2'" />
+                                            <input type="button" name="three" value="3"
+                                                onclick="Calc.Input.value += '3'" />
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <input type="button" name="four" value="4"
+                                                onclick="Calc.Input.value += '4'" />
+                                            <input type="button" name="five" value="5"
+                                                onclick="Calc.Input.value += '5'" />
+                                            <input type="button" name="six" value="6"
+                                                onclick="Calc.Input.value += '6'" />
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <input type="button" name="seven" value="7"
+                                                onclick="Calc.Input.value += '7'" />
+                                            <input type="button" name="eight" value="8"
+                                                onclick="Calc.Input.value += '8'" />
+                                            <input type="button" name="nine" value="9"
+                                                onclick="Calc.Input.value += '9'" />
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <input type="button" name="zero" value="0"
+                                                onclick="Calc.Input.value += '0'" />
+                                            <input type="button" name="punt" value="."
+                                                onclick="Calc.Input.value += '.'" />
+                                            <input type="button" name="clear" value="C"
+                                                onclick="Calc.Input.value = ''" />
+                                        </th>
+                                    </tr>
+                                </table>
+                            </th>
+                            <th>
+                                <table summary="">
+                                    <tr>
+                                        <th>
+                                            <input class="yallow-buttons" type="button" name="plus" value="+"
+                                                onclick="Calc.Input.value += '+'" />
+                                            <input class="yallow-buttons" type="button" name="minus" value="&minus;"
+                                                onclick="Calc.Input.value += '-'" />
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <input class="yallow-buttons" type="button" name="times" value="x"
+                                                onclick="Calc.Input.value += '*'" />
+                                            <input class="yallow-buttons" type="button" name="div" value="&frasl;"
+                                                onclick="Calc.Input.value += '/'" />
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <input class="yallow-buttons" type="button" name="pwr" value="^"
+                                                onclick="Calc.Input.value += '^'" />
+                                            <input class="yallow-buttons" type="button" name="sqrt" value="&#8730;"
+                                                onclick="Calc.Input.value = 'sqrt('+Calc.Input.value+')'" />
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <input class="yallow-buttons" type="button" name="DoIt" value="="
+                                                onclick="javascript:calculate();" />
+                                            <input class="yallow-buttons" type="button" name="clear" value="C"
+                                                onclick="Calc.Input.value = ''" />
+                                        </th>
+                                    </tr>
+                                </table>
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+        </table>
+    </form>
+    <script src="calculator.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
